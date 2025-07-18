@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Match Mentors - Facial Compatibility Matching</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #667eea;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .features {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .footer {
+            background: rgba(255,255,255,0.1);
+            padding: 40px 0;
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            color: white;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .features {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">💕</div>
+            <h1>My Match Mentors</h1>
+            <p class="subtitle">Discover meaningful connections through advanced facial compatibility analysis</p>
+            <a href="https://apps.apple.com/app/mymatchmentors" class="cta-button">Download on App Store</a>
+        </header>
+        
+        <div class="features">
+            <h2>How It Works</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Upload Photos</h3>
+                    <p>Upload clear photos of yourself and potential matches</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Analysis</h3>
+                    <p>Our advanced AI analyzes facial features and proportions</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Get Results</h3>
+                    <p>Receive detailed compatibility scores and insights</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3>Understand</h3>
+                    <p>Learn what makes your connection special</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h2>Why Choose My Match Mentors?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your photos are processed securely and never stored permanently</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast & Accurate</h3>
+                    <p>Get results in seconds with our advanced AI technology</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>iOS Optimized</h3>
+                    <p>Designed specifically for iPhone and iPad with native performance</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Entertainment Focus</h3>
+                    <p>Fun and educational insights for exploring compatibility</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h2 style="color: white;">Ready to Discover Your Connections?</h2>
+            <p style="text-align: center; margin-bottom: 30px; font-size: 1.2rem;">Join thousands of users exploring compatibility through AI-powered facial analysis</p>
+            <div style="text-align: center;">
+                <a href="https://apps.apple.com/app/mymatchmentors" class="cta-button" style="background: white; color: #667eea;">Download Now</a>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="mailto:support@mymatchmentors.com">Email Support</a>
+                    <a href="/support.html">Help Center</a>
+                    <a href="/contact.html">Contact Us</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                    <a href="/legal">Legal Information</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <a href="/about.html">About Us</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/press.html">Press Kit</a>
+                    <a href="/sitemap.html">Sitemap</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <a href="https://twitter.com/mymatchmentors">Twitter</a>
+                    <a href="https://instagram.com/mymatchmentors">Instagram</a>
+                    <a href="https://facebook.com/mymatchmentors">Facebook</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
