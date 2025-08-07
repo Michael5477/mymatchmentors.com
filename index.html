@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Match Mentors - Facial Compatibility Matching</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
         
         body {
@@ -27,7 +27,7 @@
         
         header {
             text-align: center;
-            padding: 60px 0;
+            padding: 60px 20px;
             color: white;
         }
         
@@ -40,20 +40,26 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
-            color: #667eea;
+            overflow: hidden;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
         }
         
         h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             font-weight: 700;
         }
         
         .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.3rem;
             margin-bottom: 30px;
+            opacity: 0.9;
         }
         
         .cta-button {
@@ -61,83 +67,102 @@
             background: white;
             color: #667eea;
             padding: 15px 30px;
-            border-radius: 25px;
             text-decoration: none;
+            border-radius: 50px;
             font-weight: 600;
             font-size: 1.1rem;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .cta-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
         
         .features {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
+            padding: 80px 20px;
             margin: 40px 0;
+            border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
         .features h2 {
             text-align: center;
-            margin-bottom: 30px;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
             color: #333;
-            font-size: 2rem;
         }
         
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         
         .feature {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
         }
         
         .feature-icon {
             font-size: 3rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
         .feature h3 {
-            margin-bottom: 10px;
-            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
         }
         
-        .footer {
+        .feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        footer {
             background: rgba(255,255,255,0.1);
-            padding: 40px 0;
+            padding: 40px 20px;
             margin-top: 40px;
             border-radius: 20px;
+            backdrop-filter: blur(10px);
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
-            color: white;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         
         .footer-section h3 {
+            color: white;
             margin-bottom: 15px;
             font-size: 1.2rem;
         }
         
         .footer-section a {
-            color: white;
+            color: rgba(255,255,255,0.8);
             text-decoration: none;
             display: block;
             margin-bottom: 8px;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
+            transition: color 0.3s ease;
         }
         
         .footer-section a:hover {
-            opacity: 1;
+            color: white;
         }
         
         @media (max-width: 768px) {
@@ -145,12 +170,16 @@
                 font-size: 2rem;
             }
             
-            .container {
-                padding: 10px;
+            .subtitle {
+                font-size: 1.1rem;
             }
             
-            .features {
-                padding: 20px;
+            .features h2 {
+                font-size: 2rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -158,7 +187,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">💕</div>
+            <div class="logo">
+                <img src="/icon.png" alt="My Match Mentors">
+            </div>
             <h1>My Match Mentors</h1>
             <p class="subtitle">Discover meaningful connections through advanced facial compatibility analysis</p>
             <a href="https://apps.apple.com/app/mymatchmentors" class="cta-button">Download on App Store</a>
@@ -228,24 +259,17 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Support</h3>
-                    <a href="mailto:support@mymatchmentors.com">Email Support</a>
                     <a href="/support.html">Help Center</a>
-                    <a href="/contact.html">Contact Us</a>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Legal</h3>
                     <a href="/privacy.html">Privacy Policy</a>
-                    <a href="/terms.html">Terms of Service</a>
-                    <a href="/legal">Legal Information</a>
                 </div>
                 
                 <div class="footer-section">
                     <h3>About</h3>
                     <a href="/about.html">About Us</a>
-                    <a href="/contact.html">Contact</a>
-                    <a href="/press.html">Press Kit</a>
-                    <a href="/sitemap.html">Sitemap</a>
                 </div>
                 
                 <div class="footer-section">
@@ -258,4 +282,4 @@
         </footer>
     </div>
 </body>
-</html> 
+</html>
